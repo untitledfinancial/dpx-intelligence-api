@@ -26,9 +26,9 @@ No API key. No subscription. Pay per call in USDC on Base mainnet via [x402](htt
 |---------|--------|------|
 | [Stability Oracle](https://github.com/untitledfinancial/dpx-stability-oracle) | `stability.untitledfinancial.com` | 10-layer signal backbone |
 | [ESG Oracle](https://github.com/untitledfinancial/dpx-esg-oracle) | `esg.untitledfinancial.com` | ESG scores → settlement fees |
-| [Compliance Oracle](https://github.com/untitledfinancial/dpx-compliance-oracle) | `compliance.untitledfinancial.com` | VoP · FATF R16 · AML |
+| [Compliance Oracle](https://github.com/untitledfinancial/dpx-compliance-public) | `compliance.untitledfinancial.com` | VoP · FATF R16 · AML |
 | **Intelligence API** | `intelligence.untitledfinancial.com` | Pay-per-call intelligence endpoints |
-| [DPX MCP Server](https://github.com/untitledfinancial/dpx-mcp) | `mcp.untitledfinancial.com` | 13 MCP tools for AI agents |
+| [DPX MCP Server](https://github.com/untitledfinancial/dpx-mcp) | `mcp.untitledfinancial.com` | 83 MCP tools for AI agents |
 
 ---
 
@@ -49,6 +49,31 @@ Payment via x402 — USDC on Base mainnet (chainId 8453). No wallet setup requir
 | `GET /intelligence/earth-systems` | $0.50 | 48h | Planetary health dashboard — atmospheric concentrations, temperature, sea ice vs pre-industrial baseline, proximity to 9 climate tipping points |
 | `GET /intelligence/instability` | $0.50 | 1h | Composite instability signal — cross-tier regime detection when macro, geopolitical, and climate signals compound |
 | `GET /intelligence/cascade` | $0.75 | 30m | Full cascade risk model — shock propagation across tiers, amplification loops, forward scenario tree |
+| `GET /intelligence/commodity` | $0.25 | — | Commodity price signal |
+| `GET /intelligence/sovereign-debt` | $0.25 | — | Sovereign debt stress signal |
+| `GET /intelligence/water-risk` | $0.25 | — | Water scarcity/risk signal |
+| `GET /intelligence/mycelium` | $0.50 | — | Mycelium Network Oracle — crisis formation from network topology |
+| `GET /intelligence/currency-stress` | $0.25 | — | Currency stress signal |
+| `GET /intelligence/biodiversity` | $0.25 | — | Biodiversity risk signal |
+| `POST /intelligence/butterfly` | $0.50 | — | Butterfly-effect cascade model |
+| `GET /intelligence/tectonic` | $0.50 | — | Slow-moving structural break detection, 6–18 month horizon |
+| `POST /intelligence/aftershock` | $0.50 | — | Secondary shock modeling across financial corridors |
+| `POST /intelligence/contagion` | $0.50 | — | Shock propagation through the financial network |
+| `GET /intelligence/resonance` | $0.50 | — | Amplifying/compounding macro signal detection |
+| `GET /intelligence/gender-risk` | $0.50 | — | GBV risk and female economic opportunity scoring |
+| `GET /intelligence/shipping-stress` | $0.25 | — | Shipping and logistics stress signal |
+| `GET /intelligence/fx-settlement` | $0.25 | — | FX settlement risk signal |
+| `POST /intelligence/composite` | $1.00 | — | Composite cross-tier synthesis |
+| `POST /intelligence/synthesis` | $1.00 | — | Full AI synthesis across all signal tiers |
+| `GET /intelligence/political-risk` | $0.50 | — | Political risk signal |
+| `GET /intelligence/transition-risk` | $0.75 | — | Climate transition risk signal |
+| `GET /intelligence/sfdr-dashboard` | $0.25 | — | SFDR PAI indicator dashboard (requires `?address=`) |
+| `GET /intelligence/48h-call` | $0.50 | — | 48-hour macro call |
+| `GET /intelligence/financed-emissions` | $0.25 | — | PCAF-aligned financed-emissions estimate (requires `?address=`) |
+| `GET /intelligence/taxonomy-alignment` | $0.25 | — | EU Taxonomy alignment (requires `?address=`) |
+| `POST /intelligence/tnfd-report` | $1.00 | — | TNFD LEAP nature-related risk report |
+
+32 paid endpoints total. Some (marked `—` above) aren't yet in the live discovery manifest at `GET /` — see [ENDPOINT_REGISTRY.md](https://docs.untitledfinancial.com) for the always-current list.
 
 ---
 
